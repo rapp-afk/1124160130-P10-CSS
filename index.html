@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Contoh</title>
     <style>
+
+      .blink {
+      font-size: 2rem;
+      font-weight: bold;
+      animation: blink-animation 1s step-end infinite;
+      }
+
+      @keyframes blink-animation {
+      50% {
+        visibility: hidden;
+      }
+    }
+
+      
+
         /* ### BOX MODEL ### */
      .box-model {
       width: 200px; /* Lebar konten */
@@ -14,11 +29,28 @@
       background-color: #537D5D; /* Warna latar */
       text-align: center;
     }
+
+    /* ### POSITIONING ### */
+     .positioning-container {
+      position: relative; /* Referensi untuk elemen yang posisinya absolut */
+      height: 200px;
+      border: 1px solid #aaa;
+    }
+
+    .positioned-box {
+      position: absolute; /* Ditempatkan relatif terhadap container */
+      top: 20px;
+      right: 400px;
+      width: 600px;
+      height: 100px;
+      background-color: greenyellow;
+      text-align: center;
+    }
     </style>
 </head>
 <body>
 
-  <h1>Contoh Materi CSS Lengkap</h1>
+  <h1 class="blink">Contoh Materi CSS Lengkap</h1>
 
   <!-- BOX MODEL -->
   <h2>1. Box Model</h2>
@@ -26,6 +58,11 @@
     Ini contoh Box Model. Ada padding, border, dan margin.
   </div>
 
+   <!-- POSITIONING -->
+  <h2>2. Positioning</h2>
+  <div class="positioning-container">
+    <div class="positioned-box">Posisi Absolut</div>
+  </div>
 
 </body>
 </html>
