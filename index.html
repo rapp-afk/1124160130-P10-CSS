@@ -95,6 +95,24 @@
       padding: 20px;
       color: white;
     }
+
+/* ### RESPONSIVE DESIGN ### */
+    .responsive-box {
+      width: 100%;
+      max-width: 600px; /* Maksimum lebar */
+      margin: auto;
+      background-color: #A5158C;
+      padding: 20px;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: #FF2DF1; /* Warna berubah jika layar kecil */
+        color: white;
+      }
+    }
+
     </style>
 </head>
 <body>
@@ -132,6 +150,12 @@
     <div class="grid-item">Grid 1</div>
     <div class="grid-item">Grid 2</div>
     <div class="grid-item">Grid 3</div>
+  </div>
+
+  <!-- RESPONSIVE DESIGN -->
+  <h2>6. Responsive Design</h2>
+  <div class="responsive-box">
+    Ubah ukuran jendela browser untuk melihat perubahan warna!
   </div>
 
 </body>
