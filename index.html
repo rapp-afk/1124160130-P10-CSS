@@ -64,6 +64,21 @@
       float: right;
       margin: 5px;
     }
+
+    /* ### FLEXBOX ### */
+    .flex-container {
+      display: flex; /* Mengaktifkan Flexbox */
+      gap: 10px; /* Jarak antar item */
+      justify-content: center; /* Rata tengah horizontal */
+      background-color: #eee;
+      padding: 10px;
+    }
+
+    .flex-item {
+      background-color: #522546;
+      padding: 20px;
+      color: white;
+    }
     </style>
 </head>
 <body>
@@ -87,6 +102,15 @@
   <div class="inline-box">Box 1</div>
   <div class="inline-box2">Box 2</div>
 
+  <!-- FLEXBOX -->
+  <h2>4. Flexbox</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item">Flex 3</div>
+  </div>
+
+  
 </body>
 </html>
 
